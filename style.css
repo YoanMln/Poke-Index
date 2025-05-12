@@ -72,3 +72,41 @@
   -webkit-box-shadow: 1px 0px 0px 6px #353935;
   -moz-box-shadow: 1px 0px 0px 6px #353935;
 }
+
+/*-----history container-----*/
+
+.history-container {
+  background-color: #c96868;
+  border-radius: 10px;
+  border: 6px solid #393e46;
+  height: 510px;
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.historyDisplay {
+  border: 4px solid #393e46;
+  border-radius: 10px;
+  background-color: #bbe9ff;
+  width: 300px;
+  height: 330px;
+  text-align: center;
+}
+
+.historyDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.history-card {
+  padding: 5px;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
