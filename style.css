@@ -13,6 +13,28 @@
   background: url(./images/background.png) center / cover;
 }
 
+.main-title {
+  display: flex;
+  justify-content: center;
+}
+
+.title-container {
+  color: #353935;
+  display: flex;
+  align-items: center;
+}
+.poke-img {
+  height: 40px;
+  width: 40px;
+}
+
+.container-poke {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
 .container-pokeIndex {
   display: flex;
   justify-content: center;
