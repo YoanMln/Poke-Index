@@ -65,6 +65,7 @@
 }
 
 .imgContainer {
+  background: url(./images/pokeIndex.png) center / cover;
   border: 4px solid #393e46;
   border-radius: 10px;
   width: 290px;
