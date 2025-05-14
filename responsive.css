@@ -1,12 +1,11 @@
 @media (max-width: 480px) {
-  nav ul {
+  .container-pokeIndex {
     display: flex;
-    justify-content: center;
-    width: 80%;
+    flex-direction: column;
+    margin-top: 0;
   }
 
   .container-poke {
-    display: flex;
-    flex-direction: column;
+    margin: 1rem;
   }
 }
