@@ -12,6 +12,7 @@
   flex-direction: column;
   background: url(./images/background.png) center / cover;
 }
+/*-----PokeContainer-----*/
 
 .pokeName-container {
   border: 4px solid #353935;
@@ -23,21 +24,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.main-title {
-  display: flex;
-  justify-content: center;
-}
-
-.title-container {
-  color: #353935;
-  display: flex;
-  align-items: center;
-}
-.poke-img {
-  height: 40px;
-  width: 40px;
 }
 
 .container-poke {
@@ -121,6 +107,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+}
+
+.title-container {
+  color: #353935;
+  display: flex;
+  align-items: center;
+}
+.poke-img {
+  height: 40px;
+  width: 40px;
 }
 
 .historyDisplay {
