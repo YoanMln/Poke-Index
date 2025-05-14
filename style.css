@@ -106,7 +106,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
 }
 
 .main-title {
@@ -131,6 +132,7 @@
   width: 300px;
   height: 330px;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 .historyDisplay {
