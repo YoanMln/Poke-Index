@@ -4,7 +4,7 @@ const maxHistory = 4;
 const url = `https://pokeapi.co/api/v2/pokemon/pikachu`;
 
 function loadNextPoke() {
-  const random = Math.floor(Math.random() * 1118) + 1;
+  const random = Math.floor(Math.random() * 151) + 1;
   const url = `https://pokeapi.co/api/v2/pokemon/${random}`;
 
   fetch(url)
