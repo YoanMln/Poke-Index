@@ -6,6 +6,11 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: PokemonHollow;
+  src: url(./font/PokemonHollow.ttf);
+}
+
 .main-container {
   min-height: 100vh;
   display: flex;
@@ -116,7 +121,9 @@
 }
 
 .title-container {
-  color: #353935;
+  font-family: PokemonHollow;
+  color: #f1eedc;
+  font-size: 20px;
   display: flex;
   align-items: center;
 }
