@@ -15,10 +15,11 @@ function loadNextPoke() {
       const containerName = document.getElementById("pokeName-container");
       containerName.innerHTML = "";
       const nameElement = document.createElement(`h2`);
-      nameElement.className = "pokeName";
+      nameElement.className = "pokeInfo";
       nameElement.textContent = `Nom : ${data.name}`;
 
       const typeElement = document.createElement("h3");
+      typeElement.className = "pokeInfo";
       typeElement.textContent = `Type : ${data.types[0].type.name}`;
 
       const imageElement = document.createElement(`img`);
@@ -56,9 +57,10 @@ function displayHistory() {
     card.classList.add("history-card");
 
     card.innerHTML = `
-        <h4>${poke.name}</h4>
-        <img src="${poke.image}" alt="${poke.name}" width="80">
+        <h5>${poke.name}</h5>
         <p>Type : ${poke.type}</p>
+        <img src="${poke.image}" alt="${poke.name}" width="80">
+        
       `;
 
     containerDisplay.appendChild(card);
