@@ -12,7 +12,10 @@ function loadNextPoke() {
     .then((data) => {
       const container = document.querySelector(`.imgContainer`);
       container.innerHTML = "";
-      const nameElement = document.createElement(`h1`);
+      const containerName = document.getElementById("pokeName-container");
+      containerName.innerHTML = "";
+      const nameElement = document.createElement(`h2`);
+      nameElement.className = "pokeName";
       nameElement.textContent = `Nom : ${data.name}`;
 
       const typeElement = document.createElement("h3");
@@ -22,8 +25,8 @@ function loadNextPoke() {
       imageElement.src = data.sprites.front_default;
       imageElement.alt = data.name;
 
-      container.appendChild(nameElement);
-      container.appendChild(typeElement);
+      containerName.appendChild(nameElement);
+      containerName.appendChild(typeElement);
       container.appendChild(imageElement);
 
       const currentPoke = {
