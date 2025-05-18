@@ -17,6 +17,21 @@
   flex-direction: column;
   background: url(./images/background.png) center / cover;
 }
+
+.btnStyle {
+  padding: 5px;
+  border: 3px solid #393e46;
+  border-radius: 5px;
+  background-color: #353935;
+  color: #f1eedc;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 1px 0px 0px 6px #353935;
+  -webkit-box-shadow: 1px 0px 0px 6px #353935;
+  -moz-box-shadow: 1px 0px 0px 6px #353935;
+}
+
 /*-----PokeContainer-----*/
 
 .pokeName-container {
@@ -86,20 +101,6 @@
   display: flex;
 }
 
-.nextBtn {
-  padding: 5px;
-  border: 3px solid #393e46;
-  border-radius: 5px;
-  background-color: #353935;
-  color: #f1eedc;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 500;
-  box-shadow: 1px 0px 0px 6px #353935;
-  -webkit-box-shadow: 1px 0px 0px 6px #353935;
-  -moz-box-shadow: 1px 0px 0px 6px #353935;
-}
-
 /*-----history container-----*/
 
 .history-container {
@@ -139,7 +140,7 @@
   width: 300px;
   height: 330px;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 12px;
 }
 
 .historyDisplay {
