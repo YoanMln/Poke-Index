@@ -48,6 +48,11 @@ function loadNextPoke() {
     });
 }
 
+loadNextPoke();
+nextBtn.addEventListener("click", loadNextPoke);
+
+/*-----History-----*/
+
 function displayHistory() {
   const containerDisplay = document.querySelector(`.historyDisplay`);
   containerDisplay.innerHTML = "";
@@ -66,6 +71,9 @@ function displayHistory() {
     containerDisplay.appendChild(card);
   });
 }
+/*-----RemovePoke-----*/
 
-loadNextPoke();
-nextBtn.addEventListener("click", loadNextPoke);
+function removePoke() {
+  const removePoke = document.querySelector(".history-card:last-child");
+  removePoke.remove();
+}
