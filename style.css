@@ -18,6 +18,11 @@
   background: url(./images/background.png) center / cover;
 }
 
+.container-btn {
+  display: flex;
+  gap: 5rem;
+}
+
 .btnStyle {
   padding: 5px;
   border: 3px solid #393e46;
@@ -95,10 +100,6 @@
 .imgContainer img {
   max-width: 100%;
   width: 70%;
-}
-
-.container-btn {
-  display: flex;
 }
 
 /*-----history container-----*/
