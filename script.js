@@ -1,9 +1,11 @@
 const pokeHistory = [];
 const maxHistory = 4;
+let currentIndex = 0;
 
 const url = `https://pokeapi.co/api/v2/pokemon/pikachu`;
 
 function loadNextPoke() {
+  currentIndex = 0;
   const random = Math.floor(Math.random() * 151) + 1;
   const url = `https://pokeapi.co/api/v2/pokemon/${random}`;
 
@@ -50,6 +52,37 @@ function loadNextPoke() {
 
 loadNextPoke();
 nextBtn.addEventListener("click", loadNextPoke);
+
+/*-----PreviousPoke-----*/
+
+function loadPreviousPoke() {
+  if (currentIndex < pokeHistory.length - 1) {
+    currentIndex++;
+    const previousPoke = pokeHistory[currentIndex];
+
+    const container = document.querySelector(`.imgContainer`);
+    container.innerHTML = "";
+    const containerName = document.getElementById("pokeName-container");
+    containerName.innerHTML = "";
+    const nameElement = document.createElement(`h2`);
+    nameElement.className = "pokeInfo";
+    nameElement.textContent = `Nom : ${previousPoke.name}`;
+
+    const typeElement = document.createElement("h3");
+    typeElement.className = "pokeInfo";
+    typeElement.textContent = `Type : ${previousPoke.type}`;
+
+    const imageElement = document.createElement(`img`);
+    imageElement.src = previousPoke.image;
+    imageElement.alt = previousPoke.name;
+
+    containerName.appendChild(nameElement);
+    containerName.appendChild(typeElement);
+    container.appendChild(imageElement);
+  }
+}
+
+loadPreviousPoke();
 
 /*-----History-----*/
 
