@@ -151,7 +151,7 @@
 }
 
 .historyDisplay {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -178,7 +178,7 @@
   height: 330px;
   text-align: center;
   margin-top: 12px;
-  display: none;
+  display: block;
 }
 
 .containerStats {
@@ -196,7 +196,14 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.containerStats p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .image-row {
+  gap: 10px;
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
