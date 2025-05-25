@@ -54,6 +54,7 @@ function loadNextPoke() {
         name: data.name,
         type: data.types[0].type.name,
         image: data.sprites.front_default,
+        backImage: data.sprites.back_default,
         height: data.height,
         weight: data.weight,
       };
@@ -165,8 +166,10 @@ function displayStats(pokemon) {
         <p>Type : ${pokemon.type}</p>
         <p>Taille : ${pokemon.height / 10} m</p>
         <p>Poids : ${pokemon.weight / 10} kg</p>
+      <div class ="image-row">
         <img src="${pokemon.image}" alt="${pokemon.name}" width="80">
-        
+        <img src="${pokemon.backImage}" alt="${pokemon.name}" width="80">
+      </div>
       `;
 
   containerStats.appendChild(card);
