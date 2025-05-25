@@ -68,6 +68,7 @@ function loadNextPoke() {
 
       /* MAJ de l'affichage de l'historique*/
       displayHistory();
+      displayStats(currentPoke);
     })
 
     .catch((error) => {
@@ -144,6 +145,35 @@ function displayHistory() {
     containerDisplay.appendChild(card);
   });
 }
+
+/* Fonction affichage stats*/
+
+function displayStats(pokemon) {
+  const statsContainer = document.getElementById("stats");
+  statsContainer.innerHTML = "";
+
+  /* Container parent pour stats-card*/
+  const containerStats = document.createElement("div");
+  containerStats.classList.add("containerStats");
+
+  /* card pour les stats */
+  const card = document.createElement("div");
+  card.classList.add("stats-card");
+
+  card.innerHTML = `
+        <h5>${pokemon.name}</h5>
+        <p>Type : ${pokemon.type}</p>
+        <p>Taille : ${pokemon.height / 10} m</p>
+        <p>Poids : ${pokemon.weight / 10} kg</p>
+        <img src="${pokemon.image}" alt="${pokemon.name}" width="80">
+        
+      `;
+
+  containerStats.appendChild(card);
+
+  statsContainer.appendChild(containerStats);
+}
+
 /*-----RemovePoke-----*/
 
 function removePoke() {
