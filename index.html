@@ -38,10 +38,18 @@
                   <h1 class="title">Poké Index</h1>
                 </div>
               </div>
+
               <div class="historyDisplay"></div>
-              <button class="btnStyle" onclick="removePoke()">
-                Remove last
-              </button>
+              <div id="stats" class="statsDisplay"></div>
+              <div class="containerSwitch">
+                <button class="btnStyle" onclick="removePoke()">
+                  Remove last
+                </button>
+                <button class="btnStyle" onclick="historyDisplay()">
+                  History
+                </button>
+                <button class="btnStyle" onclick="statsDisplay()">Stats</button>
+              </div>
             </div>
           </div>
         </div>
