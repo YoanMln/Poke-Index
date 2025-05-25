@@ -182,7 +182,9 @@ function displayStats(pokemon) {
 function removePoke() {
   /* Sélection de la dernière card de l'historique et la supprime */
   const removePoke = document.querySelector(".history-card:last-child");
-  removePoke.remove();
+  if (removePoke) removePoke.remove();
+  /* Supprime le dernier pokémon du tableau JS*/
+  pokeHistory.pop();
 }
 
 /*-----SwitchDisplay-----*/
