@@ -34,11 +34,6 @@
     height: 40px;
   }
 
-  .nextBtn {
-    font-size: 16px;
-    padding: 1px;
-  }
-
   .historyDisplay {
     height: 200px;
     width: 170px;
@@ -71,5 +66,44 @@
 
   .history-card img {
     width: 54px;
+  }
+
+  .containerStats {
+    margin-top: 0;
+  }
+
+  .statsDisplay {
+    width: 170px;
+    height: 200px;
+  }
+
+  .stats-card {
+    margin-top: 1.2rem;
+    width: 170px;
+    height: 150px;
+  }
+
+  .containerStats p {
+    margin-top: 0;
+    font-size: 13px;
+  }
+
+  .image-row {
+    margin-top: 0;
+  }
+
+  .containerSwitch {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-top: 0.6rem;
+  }
+
+  .btnStyle {
+    font-size: 10px;
+  }
+
+  .container-btn {
+    gap: 2rem;
   }
 }
