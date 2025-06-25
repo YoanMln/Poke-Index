@@ -164,8 +164,8 @@ function displayStats(pokemon) {
   card.innerHTML = `
         <h5>${pokemon.name}</h5>
         <p>Type : ${pokemon.type}</p>
-        <p>Taille : ${pokemon.height / 10} m</p>
-        <p>Poids : ${pokemon.weight / 10} kg</p>
+        <p>Size : ${pokemon.height / 10} m</p>
+        <p>Weight : ${pokemon.weight / 10} kg</p>
       <div class ="image-row">
         <img src="${pokemon.image}" alt="${pokemon.name}" width="80">
         <img src="${pokemon.backImage}" alt="${pokemon.name}" width="80">
