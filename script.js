@@ -119,10 +119,11 @@ function loadPreviousPoke() {
     containerName.appendChild(nameElement);
     containerName.appendChild(typeElement);
     container.appendChild(imageElement);
+
+    /* Met à jour l'affichage des stats*/
+    displayStats(previousPoke);
   }
 }
-
-loadPreviousPoke();
 
 /*-----History-----*/
 
