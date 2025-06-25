@@ -18,8 +18,10 @@ Il m’a permis de mettre en pratique les notions suivantes :
 
 - Affichage d’un Pokémon aléatoire grâce à l’API publique [PokeAPI](https://pokeapi.co)
 - Affichage du nom, type, et sprite (image) du Pokémon
-- Historique des 4 derniers Pokémon consultés
+- Historique des 4 derniers Pokémon consultés (history)
 - Interaction via un bouton "Next Poké"
+- Fonctionnalité permettant de visualiser les stats du Pokémon affiché (stats)
+- Fonctionnalité permettant de retirer le dernier Pokémon de l'historique (Remove last)
 
 ## 🧪 Technologies utilisées
 
